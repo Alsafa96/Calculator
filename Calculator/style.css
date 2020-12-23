@@ -1,0 +1,255 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#container{
+    display:inline-block;
+    width:fit-content;
+    height:fit-content;
+    background-color:#798686;
+}
+
+input[type='text']{
+    margin:3% 0 3% 5%;
+    background:rgba(0,0,0,0.1);
+    border:none;
+    outline:none;
+    width:88%;
+    align-self:center;
+    padding:15px;
+    color:white;
+    font-size:1.5em;
+    border-radius:5px;
+}
+
+#calculatorHeader{
+    background-color:#006622;
+    color:rgb(234,234,234);
+    height:35px;
+    justify-content:space-between;
+    display:flex;
+    align-items:center;
+    font-size:1.5rem;
+}
+
+#calculatorHeader span{
+    margin-left:15px;
+}
+
+#humburgerIcon{
+    width:30px;
+    height:28px;
+    border:2px solid #00b33c;
+    margin-right:5px; 
+    padding:1px;
+}
+
+#humburgerIcon #bar1, #bar2, #bar3 {
+    width:85%;
+    background-color:#00b33c;
+    height:3px;
+    margin:auto; 
+    margin-bottom:5px;
+    transition:all 2s ease;
+}
+
+.bar1--clicked{
+    transform:rotate(-45deg) translate(-7px,6px);
+    transition:all 2s ease;
+}
+
+.bar3--clicked{
+    transform:rotate(45deg) translate(-4px,-5px);
+    transition:all 2s ease;
+}
+
+.bar2--clicked{
+    opacity:0;
+    transition:all 2s ease;
+}
+
+#calculatorButtons{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    
+}
+
+.standardButtons, .scientificButtons{
+    height:100%;
+    margin-bottom:10px;
+    position:relative;
+}
+
+.scientificButtons{
+    margin-left:15px;
+}
+
+.standardButtons{
+    margin-right:15px;
+    margin-left:7px;
+}
+
+#calculatorButtons button {
+    width:80px;
+    height:35px;
+    vertical-align:top;
+    border-radius:3px;
+    cursor:pointer;
+}
+
+#calculatorButtons #equal{
+    width:160px;
+    background:#995c00;
+}
+
+#calculatorButtons button:hover{
+    filter:brightness(80%);
+}
+
+#calculatorButtons button:active{
+    filter:brightness(60%);
+}
+
+#calculatorTypes{
+    width:100%;
+    background:#5c8a8a;
+    font-size:1.2em;
+    font-weight:bold; 
+}
+
+#calculatorTypes li{
+    display:block;
+    cursor:pointer;
+    padding:0.8rem;
+    
+}
+
+#calculatorTypes li:hover{
+    padding-left:1rem;
+    background:rgba(88,128,128,0.9);
+    transition:all 1s ease;
+}
+
+.menuItems {
+    list-style-type:none;
+    transition:all 2s ease;
+    height:0;
+    overflow:hidden;
+}
+
+.calculatorTypes--collapse{
+    height:95px;
+
+}
+
+/*Making desing responsive:-*/
+
+@media screen and (max-width:599px){
+    #calculatorButtons button{
+        width:75px;
+    }
+
+    #calculatorButtons #equal{
+        width:150px;
+    }
+}
+
+@media screen and (max-width:561px){
+    #calculatorButtons button{
+        width:70px;
+    }
+
+    #calculatorButtons #equal{
+        width:140px;
+    }
+}
+
+@media screen and (max-width:527px){
+    #calculatorButtons button{
+        width:65px;
+    }
+
+    #calculatorButtons #equal{
+        width:130px;
+    }
+
+    .standardButtons{
+        margin-left:15px;
+    }
+}
+
+@media screen and (max-width:499px){
+    #calculatorButtons button{
+        width:55px;
+    }
+
+    #calculatorButtons #equal{
+        width:110px;
+    }
+
+    .standardButtons{
+        margin-left:30px;
+    }
+}
+
+@media screen and (max-width:444px){
+    #calculatorButtons button{
+        width:50px;
+        border-radius:6px;
+    }
+
+    #calculatorButtons #equal{
+        width:100px;
+    }
+}
+
+@media screen and (max-width:409px){
+    #calculatorButtons button{
+        width:45px;
+    }
+
+    #calculatorButtons #equal{
+        width:90px;
+    }
+
+    .standardButtons{
+        margin-left:40px;
+    }
+
+    .scientificButtons{
+        margin-left:10px;
+    }
+}
+
+@media screen and (max-width:379px){
+    #calculatorButtons button{
+        width:40px;
+    }
+
+    #calculatorButtons #equal{
+        width:80px;
+    }
+}
+
+@media screen and (max-width:344px){
+    #calculatorButtons button{
+        width:35px;
+    }
+
+    #calculatorButtons #equal{
+        width:70px;
+    }
+}
+
+@media screen and (max-width:309px){
+    #calculatorButtons button{
+        width:30px;
+    }
+
+    #calculatorButtons #equal{
+        width:60px;
+    }
+}

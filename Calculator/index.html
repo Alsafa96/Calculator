@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta charset='utf-8' />
+    <title>Calculator</title>
+    <link rel='stylesheet' href='style.css' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/8.1.0/math.min.js'></script>
+</head>
+<body>
+    <div id='container' class='container'>
+        <div class='row'>
+            <div class='col'>
+                    <div id='calculatorHeader'>
+                            <span>Calculator</span>
+                            <div id='humburgerIcon' tabindex='0'>
+                                <div id='bar1'></div>
+                                <div id='bar2'></div>
+                                <div id='bar3'></div>
+                            </div>
+                        </div>
+                        <div id='calculatorTypes'>
+                            <ul class='menuItems'>
+                                    <li id='standard' class='menuItem'>Standard</li>
+                                    <li id='scientific' class='menuItem'>Scientific</li>
+                            </ul>
+                                
+                        </div>
+                            <input type='text' id='calculatorScreen'  maxlength='16' readonly />
+                            <div id='calculatorButtons'> </div>
+            </div>
+        </div>
+            
+    </div>
+   
+    <script src='app.js'></script>
+</body>
+</html>
